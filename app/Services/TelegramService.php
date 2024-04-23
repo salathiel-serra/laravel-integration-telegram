@@ -30,8 +30,8 @@ class TelegramService
     {
         $request = request()->all();
 
-        return 'Olá, ' . $request["name"] . "\n" .
-        'Seu e-mail: ' . $request["email"]  . "\n" .
-        'Sua mensagem:' . $request["message"];
+        return 'Nome: ' . $request["name"] . "\n" .
+        'E-mail: ' . $request["email"]  . "\n\n" .
+        'Mensagem: ' . $request["message"];
     }
 }
